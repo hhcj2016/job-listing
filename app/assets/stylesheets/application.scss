@@ -23,11 +23,11 @@
 
 
 .jumbotron {
-  background-image:url('http://y.photo.qq.com/img?s=n0m7YMg0L&l=y.jpg');
+  background-image:url('https://ww2.sinaimg.cn/large/006tNbRwjw1fc7vvfa4rzj30he0blabu.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   margin: -20px;
-  padding-bottom: 110px;
+  padding-bottom: 160px; //主图的高度
 }
 
 .title {
@@ -46,6 +46,7 @@
 }
 
 .lead {
+  margin-top: 110px;
   margin-bottom: 60px;
   text-align: center;
   color: white;
@@ -82,6 +83,8 @@
 
 
 /****** LOGIN MODAL ******/
+
+
 .loginmodal-container {
   padding: 30px;
   max-width: 350px;
@@ -177,6 +180,8 @@
 }
 
 
+
+/****** LOGIN MODAL ******/
 .navbar-default {
     background-color: #212121;//背景颜色
     border-color: #212121;//边框色
@@ -187,4 +192,55 @@
     .navbar {
         border-radius: 0;//圆角为0
     }
+}
+
+
+
+
+
+.navbar-default .navbar-brand {
+   color: #EF6C00;//网站左上角名字字体颜色
+   padding: 10px 15px;//上下10px,左右15px
+   line-height: 30px;//文字行高
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #FFFFFF;//鼠标放置在链接上的文字颜色
+  background-color: transparent;//鼠标放置在链接上的背景颜色，这里设为透明
+}
+
+
+.navbar-default .navbar-nav > li > a{
+  color: #EF6C00;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #FF6F00;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #FF6F00;
+  background-color: #FFE0B2;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    background-color: #FFE0B2;
+    color: #212121;
+}
+
+
+//修改按钮大小
+.btn-lg, .btn-group-lg > .btn {
+    margin-top: 80px;
+    margin-bottom: 0px;
+    margin-left: 60px;
+    font-size: 18px;//btn文字大小
+    letter-spacing: 3px;//调整文字间距
+    border-radius: 3px;//btn圆角
 }
