@@ -9,6 +9,9 @@ class Job < ApplicationRecord
   scope :recent, -> { order('created_at DESC') }
 
   has_many :resumes
+    def self.search(search)
+      where("title LIKE ?", "%#{search}%").or(where("description LIKE ?", "%#{search}%"))
+    end
 
   def publish!
     self.is_hidden = false
